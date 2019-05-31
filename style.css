@@ -1,0 +1,194 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-top: 15px;
+}
+header {
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+  
+}
+
+footer {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+p, h3, h4{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.site-logo{
+	display: flex;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 0px 3px;
+  position:relative;
+}
+
+.menu{
+	background: white;
+	display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.section-heading{
+	display: flex;
+    justify-content: center;
+    text-shadow:1px 1px  #f5f5ef, 
+                2px 2px #f5f5ef, 
+                3px 3px #f5f5ef;
+             
+}
+
+.section-about{
+  background-image: url("bg.jpg");
+  height: 950px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.section-about .section-heading{
+    color: white;
+    font-size: 50pt;
+    position: absolute; 
+   	top: 300px;
+   	left: 0; 
+   	width: 100%; 
+   	border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+    text-shadow: 0 0 0;
+}   
+.section-about .section-text{
+    color: white;
+    text-shadow: 0 0 0;
+    position: absolute;
+   	top: 450px; 
+   	width: 60%; 
+}    
+
+.wine{
+	display: flex;
+	align-items: center;
+}
+
+.wine img{
+	margin-right: 20px;
+	margin-left: 5px;
+	height: 500px;
+}
+
+.wine div{
+	margin-right: 40px;
+}
+
+.section-history{
+	background: #f5f5ef;
+}
+
+.slider{
+    max-width: 80%;
+    position: relative;
+    
+    height: 300px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover, .slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-dots {
+  text-align: center;
+ 
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.section-contact{
+	display: flex;
+	align-items: flex-wrap;
+	background: #f5f5ef;
+}
+.section-contact img{
+	margin-right: 20px;
+	margin-left: 5px;
+	height: 100%;
+}
